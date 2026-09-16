@@ -25,21 +25,13 @@
 
         .search-bar { background: #fff3cd; border: 1px solid #ffeeba; padding: 12px 20px; border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
         .search-bar label { font-weight: bold; color: #856404; font-size: 0.95rem; }
-        .search-bar input { flex: 1; max-width: 320px; padding: 8px 12px; border: 1px solid #ffc107; border-radius: 6px; font-size: 0.95rem; }
+        .search-bar input { flex: 1; max-width: 300px; padding: 8px 12px; border: 1px solid #ffc107; border-radius: 6px; font-size: 0.95rem; }
 
         .batch-panel { background: #eef9f1; border: 1px solid #27ae60; padding: 12px 20px; border-radius: 10px; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
-        .batch-panel-info { display: flex; align-items: center; gap: 12px; font-weight: bold; color: #1e8449; font-size: 0.95rem; }
-        .selectAll-wrap { display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; background: white; padding: 4px 10px; border-radius: 6px; border: 1px solid #27ae60; }
-        .batch-panel-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .batch-panel-info { display: flex; align-items: center; gap: 8px; font-weight: bold; color: #1e8449; font-size: 0.95rem; }
+        .batch-panel-controls { display: flex; align-items: center; gap: 8px; }
         .batch-panel select { padding: 7px 10px; border: 1px solid #27ae60; border-radius: 6px; font-weight: bold; }
         .btn-batch { background: #27ae60; color: white; border: none; padding: 7px 14px; border-radius: 6px; cursor: pointer; font-weight: bold; }
-        .btn-step-batch { background: #2980b9; color: white; border: none; padding: 7px 14px; border-radius: 6px; cursor: pointer; font-weight: bold; }
-        .btn-step-batch.down { background: #e67e22; }
-        .btn-grade-batch { background: #8e44ad; color: white; border: none; padding: 7px 14px; border-radius: 6px; cursor: pointer; font-weight: bold; }
-        .btn-grade-batch.down { background: #d35400; }
-        .btn-status-batch { background: #f39c12; color: white; border: none; padding: 7px 12px; border-radius: 6px; cursor: pointer; font-weight: bold; }
-        .btn-status-batch.restore { background: #27ae60; }
-        .btn-delete-batch { background: #c0392b; color: white; border: none; padding: 7px 12px; border-radius: 6px; cursor: pointer; font-weight: bold; }
 
         .add-panel { background: #eaf2f8; border: 1px solid #aed6f1; padding: 14px 20px; border-radius: 10px; margin-bottom: 20px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
         .add-panel h4 { margin: 0; color: #1b4f72; font-size: 0.95rem; }
@@ -49,7 +41,7 @@
         .dropzone { border: 2px dashed #3498db; background-color: #f0f8ff; padding: 20px; text-align: center; border-radius: 10px; cursor: pointer; margin-bottom: 20px; transition: background-color 0.2s, border-color 0.2s; }
         .dropzone.dragover { background-color: #e1f5fe; border-color: #0288d1; }
         .dropzone p { margin: 0; font-size: 0.95rem; color: #2c3e50; font-weight: bold; }
-        
+
         .summary-bar { display: flex; gap: 10px; margin: 15px 0; overflow-x: auto; padding-bottom: 8px; }
         .tab-btn { flex: 1; min-width: 95px; padding: 10px 6px; background: #fff; border: 2px solid #e0e0e0; border-radius: 8px; cursor: pointer; font-size: 0.85rem; font-weight: bold; color: #666; text-align: center; white-space: nowrap; }
         .tab-btn.active { background-color: #2c3e50; color: #fff; border-color: #2c3e50; }
@@ -63,16 +55,15 @@
         .card.group-b { border-color: #2ecc71; }
         .card.group-test { border-color: #e74c3c; }
 
-        .card-header { padding: 10px 16px; font-weight: bold; font-size: 0.95rem; display: flex; justify-content: space-between; align-items: center; background: #fafafa; border-bottom: 1px solid #eee; }
-        .group-select-label { display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; font-weight: bold; color: #2c3e50; }
+        .card-header { padding: 12px 16px; font-weight: bold; font-size: 1rem; display: flex; justify-content: space-between; align-items: center; background: #fafafa; border-bottom: 1px solid #eee; }
         .count-tag { font-size: 0.8rem; padding: 2px 7px; border-radius: 10px; background: #eee; }
 
         table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
         th, td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
         th { background: #f9f9f9; color: #777; font-weight: 600; }
         
-        .grade-tag { font-size: 0.75rem; background: #e8f4f8; color: #2980b9; padding: 2px 5px; border-radius: 4px; font-weight: bold; cursor: pointer; }
-        .kinder-tag { font-size: 0.75rem; background: #fef9e7; color: #d35400; padding: 2px 5px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+        .grade-tag { font-size: 0.75rem; background: #e8f4f8; color: #2980b9; padding: 2px 5px; border-radius: 4px; font-weight: bold; }
+        .kinder-tag { font-size: 0.75rem; background: #fef9e7; color: #d35400; padding: 2px 5px; border-radius: 4px; font-weight: bold; }
         .branch-badge { font-size: 0.7rem; padding: 2px 5px; border-radius: 3px; font-weight: bold; color: white; background: #7f8c8d; margin-right: 4px; }
         .branch-badge.b1 { background: #2980b9; }
         .branch-badge.b2 { background: #27ae60; }
@@ -82,8 +73,8 @@
         .btn-lvl-step:disabled { opacity: 0.3; cursor: not-allowed; }
         .level-select { padding: 3px 2px; border-radius: 4px; border: 1px solid #ddd; font-weight: bold; font-size: 0.8rem; }
 
-        .chk-student { width: 16px; height: 16px; cursor: pointer; }
-        .btn-edit-small { background: none; border: none; cursor: pointer; font-size: 0.75rem; color: #7f8c8d; padding: 0 2px; }
+        .chk-student { width: 15px; height: 15px; cursor: pointer; }
+        .btn-edit-name { background: none; border: none; cursor: pointer; font-size: 0.75rem; color: #7f8c8d; }
         .btn-pause { background: #f39c12; color: white; border: none; padding: 3px 6px; border-radius: 4px; cursor: pointer; font-size: 0.75rem; font-weight: bold; }
         .btn-restore { background: #27ae60; color: white; border: none; padding: 3px 6px; border-radius: 4px; cursor: pointer; font-size: 0.75rem; font-weight: bold; }
         .del-btn { background: #fadbd8; color: #c0392b; border: 1px solid #f5b7b1; padding: 3px 6px; border-radius: 4px; cursor: pointer; font-size: 0.75rem; font-weight: bold; }
@@ -92,8 +83,6 @@
         .btn { padding: 9px 16px; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 0.88rem; font-weight: bold; }
         .excel-btn { background: #27ae60; }
         .sync-btn { background: #2980b9; }
-        .save-btn { background: #8e44ad; }
-        .load-btn { background: #d35400; }
     </style>
 </head>
 <body>
@@ -101,7 +90,7 @@
 <div class="container">
     <div class="header-title">
         <h1>미라클줄넘기클럽 레벨테스트 관리</h1>
-        <div class="sync-status" id="syncStatus">💾 브라우저 자동 저장 활성화됨</div>
+        <div class="sync-status" id="syncStatus">☁️ 구글 연동 대기 중</div>
     </div>
 
     <div class="branch-selector">
@@ -115,41 +104,23 @@
             <label for="testMonth">🗓️ 기준 월 설정:</label>
             <input type="month" id="testMonth" onchange="recalculateAndRender()">
         </div>
-        <div style="display:flex; gap:8px;">
-            <button class="btn save-btn" onclick="downloadBackupJSON()">💾 백업파일 저장</button>
-            <button class="btn load-btn" onclick="document.getElementById('jsonFileInput').click()">📂 백업파일 불러오기</button>
-            <input type="file" id="jsonFileInput" accept=".json" style="display:none;" onchange="loadBackupJSON(this.files[0])">
-            <button class="btn sync-btn" onclick="fetchDataFromGoogle()">🔄 Cloud 불러오기</button>
+        <div>
+            <button class="btn sync-btn" onclick="fetchDataFromGoogle()">🔄 Cloud 데이터 불러오기</button>
             <button class="btn excel-btn" onclick="exportToExcel()">📊 엑셀 다운로드</button>
         </div>
     </div>
 
-    <!-- 초성 검색창 예시 변경: 미라클 ㅁㄹㅋ -->
     <div class="search-bar">
-        <label for="searchInput">🔍 관원 이름 / 초성 검색:</label>
-        <input type="text" id="searchInput" placeholder="이름 또는 초성 입력 (예: 미라클, ㅁㄹㅋ)" oninput="onSearchInput()">
+        <label for="searchInput">🔍 관원 이름 검색:</label>
+        <input type="text" id="searchInput" placeholder="검색할 원생 이름을 입력하세요..." oninput="onSearchInput()">
     </div>
 
-    <!-- 일괄 관리 및 선택 패널 (삭제 / 휴원 / 재원 일괄 처리 기능 추가) -->
     <div class="batch-panel">
         <div class="batch-panel-info">
-            <label class="selectAll-wrap">
-                <input type="checkbox" id="chkSelectAll" class="chk-student" onchange="toggleSelectAll(this.checked)">
-                <span>전체 화면 선택</span>
-            </label>
             <span>✅ 선택된 관원: <strong id="selectedCount">0</strong>명 (<span id="currentBranchLabel">1관</span>)</span>
         </div>
         <div class="batch-panel-controls">
-            <button class="btn-status-batch" onclick="batchSetPauseStatus(true)">⏸️ 일괄 휴원</button>
-            <button class="btn-status-batch restore" onclick="batchSetPauseStatus(false)">▶️ 일괄 재원</button>
-            <button class="btn-delete-batch" onclick="batchDeleteStudents()">🗑️ 일괄 삭제</button>
-            <span style="color:#ccc; margin: 0 4px;">|</span>
-            <button class="btn-grade-batch" onclick="stepBatchGradeUpdate(1)">🎓 학년 +1</button>
-            <button class="btn-grade-batch down" onclick="stepBatchGradeUpdate(-1)">🎓 학년 -1</button>
-            <span style="color:#ccc; margin: 0 4px;">|</span>
-            <button class="btn-step-batch" onclick="stepBatchLevelUpdate(1)">➕ 레벨 +1</button>
-            <button class="btn-step-batch down" onclick="stepBatchLevelUpdate(-1)">➖ 레벨 -1</button>
-            <span style="color:#ccc; margin: 0 4px;">|</span>
+            <label for="batchLevelSelect">변경할 레벨:</label>
             <select id="batchLevelSelect">
                 <option value="Lv1-A">Lv1-A</option><option value="Lv1-B">Lv1-B</option><option value="Lv1-TEST">Lv1-TEST</option>
                 <option value="Lv2-A">Lv2-A</option><option value="Lv2-B">Lv2-B</option><option value="Lv2-TEST">Lv2-TEST</option>
@@ -158,7 +129,7 @@
                 <option value="Lv5-A">Lv5-A</option><option value="Lv5-B">Lv5-B</option><option value="Lv5-TEST">Lv5-TEST</option>
                 <option value="엘리트">엘리트</option>
             </select>
-            <button class="btn-batch" onclick="applyBatchLevelUpdate()">지정 변경</button>
+            <button class="btn-batch" onclick="applyBatchLevelUpdate()">일괄 변경</button>
         </div>
     </div>
 
@@ -196,8 +167,8 @@
 </div>
 
 <script>
-    const GOOGLE_SCRIPT_URL = ""; // 구글 연동시 앱 스크립트 웹앱 URL 입력
-    const STORAGE_KEY = "MIRACLE_JUMP_ROPE_DATA_V1";
+    // ⭕ 구글 웹 앱 URL 올바르게 연결됨!
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwEZIc4RD3RWKT9A67kOuuJzl7X2aybh2ZpdHiFKYfG3qflbiyEdjRsNuDd1aqJ84DF/exec";
 
     let rawDataByBranch = { "1관": {}, "2관": {} };
     let currentBranch = "1관";
@@ -213,123 +184,12 @@
         "Lv5-A", "Lv5-B", "Lv5-TEST", "엘리트"
     ];
 
-    const gradeOrder = [
-        "유치부", "초-1", "초-2", "초-3", "초-4", "초-5", "초-6",
-        "중-1", "중-2", "중-3", "고-1", "고-2", "고-3"
-    ];
-
-    const CHOSUNG_LIST = [
-        'ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ', 'ㅂ', 'ㅃ', 
-        'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ', 'ㅊ', 'ㅋ', 'ㅌ', 'ㅍ', 'ㅎ'
-    ];
-
-    function getChosungArray(str) {
-        let result = [];
-        for (let i = 0; i < str.length; i++) {
-            const code = str.charCodeAt(i) - 44032;
-            if (code >= 0 && code <= 11172) {
-                result.push(CHOSUNG_LIST[Math.floor(code / 588)]);
-            } else {
-                result.push(str[i].toLowerCase());
-            }
-        }
-        return result;
-    }
-
-    function matchSearchQuery(name, query) {
-        if (!query) return true;
-        const cleanName = name.replace(/\s+/g, '').toLowerCase();
-        const cleanQuery = query.replace(/\s+/g, '').toLowerCase();
-
-        if (cleanName.includes(cleanQuery)) return true;
-
-        const nameChosung = getChosungArray(cleanName);
-        const queryChosung = getChosungArray(cleanQuery);
-
-        if (queryChosung.length > nameChosung.length) return false;
-
-        for (let i = 0; i <= nameChosung.length - queryChosung.length; i++) {
-            let match = true;
-            for (let j = 0; j < queryChosung.length; j++) {
-                if (nameChosung[i + j] !== queryChosung[j]) {
-                    match = false;
-                    break;
-                }
-            }
-            if (match) return true;
-        }
-        return false;
-    }
-
     document.getElementById('testMonth').value = new Date().toISOString().slice(0, 7);
 
     window.onload = function() {
         setupDragAndDrop();
-        loadFromLocalStorage();
-        
-        if (GOOGLE_SCRIPT_URL && GOOGLE_SCRIPT_URL.startsWith("http")) {
-            fetchDataFromGoogle();
-        }
+        fetchDataFromGoogle();
     };
-
-    function saveToLocalStorage() {
-        try {
-            localStorage.setItem(STORAGE_KEY, JSON.stringify(rawDataByBranch));
-            if (!GOOGLE_SCRIPT_URL || !GOOGLE_SCRIPT_URL.startsWith("http")) {
-                updateSyncStatus("💾 브라우저에 저장 완료!", "#27ae60");
-            }
-        } catch (e) {
-            console.error("로컬 저장 실패:", e);
-        }
-    }
-
-    function loadFromLocalStorage() {
-        const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved) {
-            try {
-                rawDataByBranch = JSON.parse(saved);
-                recalculateAndRender();
-            } catch (e) {
-                console.error("로컬데이터 불러오기 실패:", e);
-            }
-        }
-    }
-
-    function downloadBackupJSON() {
-        const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(rawDataByBranch, null, 2));
-        const downloadAnchor = document.createElement('a');
-        downloadAnchor.setAttribute("href", dataStr);
-        downloadAnchor.setAttribute("download", `미라클줄넘기_데이터백업_${document.getElementById('testMonth').value}.json`);
-        document.body.appendChild(downloadAnchor);
-        downloadAnchor.click();
-        downloadAnchor.remove();
-    }
-
-    function loadBackupJSON(file) {
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            try {
-                const data = JSON.parse(e.target.result);
-                if (data["1관"] || data["2관"]) {
-                    rawDataByBranch = data;
-                    saveDataAll();
-                    recalculateAndRender();
-                    alert("✅ 백업 데이터를 성공적으로 불러왔습니다.");
-                } else {
-                    alert("❌ 올바른 미라클줄넘기 백업 파일이 아닙니다.");
-                }
-            } catch (err) {
-                alert("❌ 파일을 읽는 도중 오류가 발생했습니다.");
-            }
-        };
-        reader.readAsText(file);
-    }
-
-    function saveDataAll() {
-        saveToLocalStorage();
-        saveDataToGoogle();
-    }
 
     function setupDragAndDrop() {
         const dropzone = document.getElementById('dropzone');
@@ -339,16 +199,14 @@
 
         ['dragenter', 'dragover'].forEach(eventName => {
             dropzone.addEventListener(eventName, (e) => {
-                e.preventDefault();
-                e.stopPropagation();
+                e.preventDefault(); e.stopPropagation();
                 dropzone.classList.add('dragover');
             }, false);
         });
 
         ['dragleave', 'drop'].forEach(eventName => {
             dropzone.addEventListener(eventName, (e) => {
-                e.preventDefault();
-                e.stopPropagation();
+                e.preventDefault(); e.stopPropagation();
                 dropzone.classList.remove('dragover');
             }, false);
         });
@@ -356,9 +214,7 @@
         dropzone.addEventListener('drop', (e) => {
             const dt = e.dataTransfer;
             const files = dt.files;
-            if (files && files.length > 0) {
-                handleFile(files[0]);
-            }
+            if (files && files.length > 0) handleFile(files[0]);
         }, false);
     }
 
@@ -386,7 +242,6 @@
     }
 
     function fetchDataFromGoogle() {
-        if (!GOOGLE_SCRIPT_URL || !GOOGLE_SCRIPT_URL.startsWith("http")) return;
         updateSyncStatus("🔄 구글 Cloud 불러오는 중...", "#2980b9");
         fetch(GOOGLE_SCRIPT_URL)
             .then(res => res.json())
@@ -394,25 +249,22 @@
                 rawDataByBranch = { "1관": {}, "2관": {} };
                 ["1관", "2관"].forEach(b => {
                     if (data[b]) {
-                        data[b].forEach(st => {
-                            rawDataByBranch[b][st.name] = st;
-                        });
+                        data[b].forEach(st => { rawDataByBranch[b][st.name] = st; });
                     }
                 });
-                saveToLocalStorage();
-                updateSyncStatus("☁️ 구글 Cloud 동기화 완료", "#27ae60");
+                updateSyncStatus("☁️ 구글 Cloud 실시간 연동됨", "#27ae60");
                 recalculateAndRender();
             })
             .catch(err => {
                 console.error(err);
-                updateSyncStatus("❌ 구글 연동 실패 (로컬데이터 유지)", "#c0392b");
+                updateSyncStatus("❌ 구글 연동 실패", "#c0392b");
+                recalculateAndRender();
             });
     }
 
     function saveDataToGoogle() {
         if (!GOOGLE_SCRIPT_URL || !GOOGLE_SCRIPT_URL.startsWith("http")) return;
-        
-        updateSyncStatus("💾 구글 Cloud 저장 중...", "#e67e22");
+        updateSyncStatus("💾 구글 Cloud에 저장 중...", "#e67e22");
 
         const payload = {
             "1관": Object.values(rawDataByBranch["1관"]),
@@ -425,9 +277,7 @@
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
         })
-        .then(() => {
-            updateSyncStatus("☁️ 구글 Cloud 저장 완료", "#27ae60");
-        })
+        .then(() => updateSyncStatus("☁️ 구글 Cloud 실시간 저장 완료", "#27ae60"))
         .catch(err => {
             console.error(err);
             updateSyncStatus("❌ 구글 저장 실패", "#c0392b");
@@ -445,14 +295,13 @@
     function recalculateAndRender() {
         initDataStructure();
         const testMonth = document.getElementById('testMonth').value;
-        
         let activeCount = 0;
         let pausedCount = 0;
 
         const targetBranches = currentBranch === '전체' ? ["1관", "2관"] : [currentBranch];
 
         targetBranches.forEach(b => {
-            Object.values(rawDataByBranch[b]).forEach(st => {
+            Object.values(rawDataByBranch[b] || {}).forEach(st => {
                 const studentWithBranch = { ...st, branch: b };
 
                 if (st.isPaused) {
@@ -545,26 +394,12 @@
 
     function filterBySearch(list) {
         if (!searchQuery) return list;
-        return list.filter(s => matchSearchQuery(s.name, searchQuery));
-    }
-
-    function getCurrentlyVisibleStudents() {
-        let list = [];
-        if (currentSelectedLevel === 'All' || currentSelectedLevel === 'Paused' || currentSelectedLevel === 'Stagnant') {
-            list = filterBySearch(parsedData[currentSelectedLevel].List);
-        } else {
-            const groupA = filterBySearch(parsedData[currentSelectedLevel].A);
-            const groupB = filterBySearch(parsedData[currentSelectedLevel].B);
-            const groupTest = filterBySearch(parsedData[currentSelectedLevel].Test);
-            list = [...groupA, ...groupB, ...groupTest];
-        }
-        return list;
+        return list.filter(s => s.name.toLowerCase().includes(searchQuery));
     }
 
     function onSearchInput() {
-        searchQuery = document.getElementById('searchInput').value.trim();
+        searchQuery = document.getElementById('searchInput').value.trim().toLowerCase();
         renderCards(currentSelectedLevel);
-        updateSelectedCountUI();
     }
 
     function renderCards(level) {
@@ -577,17 +412,15 @@
             card.className = 'card';
             card.style.gridColumn = '1 / -1';
 
-            const isAllGroupSelected = list.length > 0 && list.every(s => selectedStudents.has(s.branch + '_' + s.name));
-
             let rows = list.map((s, idx) => `
                 <tr>
-                    <td style="width:30px;"><input type="checkbox" class="chk-student" data-key="${s.branch}_${s.name}" ${selectedStudents.has(s.branch + '_' + s.name) ? 'checked' : ''} onchange="toggleSelectStudent('${s.branch}', '${s.name}', this.checked)"></td>
+                    <td style="width:30px;"><input type="checkbox" class="chk-student" data-name="${s.name}" data-branch="${s.branch}" ${selectedStudents.has(s.branch + '_' + s.name) ? 'checked' : ''} onchange="toggleSelectStudent('${s.branch}', '${s.name}', this.checked)"></td>
                     <td style="width:35px;">${idx + 1}</td>
                     <td>
                         <span class="branch-badge ${s.branch==='1관'?'b1':'b2'}">${s.branch}</span>
                         <strong>${s.name}</strong> 
-                        <button class="btn-edit-small" title="이름 수정" onclick="editStudentName('${s.branch}', '${s.name}')">✏️</button>
-                        <span class="${s.isKinder ? 'kinder-tag' : 'grade-tag'}" title="클릭하여 학년 수정" onclick="editStudentGrade('${s.branch}', '${s.name}')">${s.grade} ✏️</span>
+                        <button class="btn-edit-name" onclick="editStudentName('${s.branch}', '${s.name}')">✏️</button>
+                        <span class="${s.isKinder ? 'kinder-tag' : 'grade-tag'}">${s.grade}</span>
                         ${s.stagnantMonths >= 3 ? `<span style="font-size:0.75rem; color:#e67e22; font-weight:bold; margin-left:6px;">⚠️ ${s.stagnantMonths}개월 정체</span>` : ''}
                     </td>
                     <td>${createLevelControl(s.branch, s.name, s.levelRaw)}</td>
@@ -602,14 +435,11 @@
 
             card.innerHTML = `
                 <div class="card-header">
-                    <label class="group-select-label">
-                        <input type="checkbox" class="chk-student" ${isAllGroupSelected ? 'checked' : ''} onchange="toggleGroupSelect('${level}', 'List', this.checked)">
-                        <span>${level === 'All' ? '📋 전체 명단' : (level === 'Paused' ? '⏸️ 휴원생 명단' : '⚠️ 장기 정체 관원 명단')}</span>
-                    </label>
+                    <span>${level === 'All' ? '📋 전체 명단' : (level === 'Paused' ? '⏸️ 휴원생 명단' : '⚠️ 장기 정체 관원 명단')}</span>
                     <span class="count-tag">${list.length}명</span>
                 </div>
                 <table>
-                    <thead><tr><th>선택</th><th>#</th><th>지점 / 이름 / 학년</th><th>현재 레벨</th><th>관리</th></tr></thead>
+                    <thead><tr><th></th><th>#</th><th>지점 / 이름 / 학년</th><th>현재 레벨</th><th>관리</th></tr></thead>
                     <tbody>${rows}</tbody>
                 </table>
             `;
@@ -628,17 +458,15 @@
             const card = document.createElement('div');
             card.className = `card ${g.class}`;
 
-            const isGroupSelected = students.length > 0 && students.every(s => selectedStudents.has(s.branch + '_' + s.name));
-
             let tableRows = students.map((s, idx) => `
                 <tr>
-                    <td style="width:25px;"><input type="checkbox" class="chk-student" data-key="${s.branch}_${s.name}" ${selectedStudents.has(s.branch + '_' + s.name) ? 'checked' : ''} onchange="toggleSelectStudent('${s.branch}', '${s.name}', this.checked)"></td>
+                    <td style="width:25px;"><input type="checkbox" class="chk-student" data-name="${s.name}" data-branch="${s.branch}" ${selectedStudents.has(s.branch + '_' + s.name) ? 'checked' : ''} onchange="toggleSelectStudent('${s.branch}', '${s.name}', this.checked)"></td>
                     <td style="width:20px;">${idx + 1}</td>
                     <td>
                         <span class="branch-badge ${s.branch==='1관'?'b1':'b2'}">${s.branch}</span>
                         <strong>${s.name}</strong> 
-                        <button class="btn-edit-small" title="이름 수정" onclick="editStudentName('${s.branch}', '${s.name}')">✏️</button>
-                        <span class="${s.isKinder ? 'kinder-tag' : 'grade-tag'}" title="클릭하여 학년 수정" onclick="editStudentGrade('${s.branch}', '${s.name}')">${s.grade} ✏️</span>
+                        <button class="btn-edit-name" onclick="editStudentName('${s.branch}', '${s.name}')">✏️</button>
+                        <span class="${s.isKinder ? 'kinder-tag' : 'grade-tag'}">${s.grade}</span>
                     </td>
                     <td>${createLevelControl(s.branch, s.name, s.levelRaw)}</td>
                     <td style="width:75px; text-align:right;">
@@ -652,37 +480,16 @@
 
             card.innerHTML = `
                 <div class="card-header">
-                    <label class="group-select-label">
-                        <input type="checkbox" class="chk-student" ${isGroupSelected ? 'checked' : ''} onchange="toggleGroupSelect('${level}', '${g.key}', this.checked)">
-                        <span>${g.title}</span>
-                    </label>
+                    <span>${g.title}</span>
                     <span class="count-tag">${students.length}명</span>
                 </div>
                 <table>
-                    <thead><tr><th>선택</th><th>#</th><th>이름</th><th>레벨</th><th>관리</th></tr></thead>
+                    <thead><tr><th></th><th>#</th><th>이름</th><th>레벨</th><th>관리</th></tr></thead>
                     <tbody>${tableRows}</tbody>
                 </table>
             `;
             gridContainer.appendChild(card);
         });
-    }
-
-    function toggleGroupSelect(level, groupKey, isChecked) {
-        let students = [];
-        if (groupKey === 'List') {
-            students = filterBySearch(parsedData[level].List);
-        } else {
-            students = filterBySearch(parsedData[level][groupKey]);
-        }
-
-        students.forEach(s => {
-            const key = s.branch + '_' + s.name;
-            if (isChecked) selectedStudents.add(key);
-            else selectedStudents.delete(key);
-        });
-
-        renderCards(currentSelectedLevel);
-        updateSelectedCountUI();
     }
 
     function createLevelControl(branch, name, currentLevelRaw) {
@@ -708,16 +515,16 @@
 
     function updateStudentLevel(branch, name, newLevelRaw) {
         const currentMonth = document.getElementById('testMonth').value;
-        if (rawDataByBranch[branch][name]) {
+        if (rawDataByBranch[branch] && rawDataByBranch[branch][name]) {
             rawDataByBranch[branch][name].levelRaw = newLevelRaw;
             rawDataByBranch[branch][name].levelStartDate = currentMonth;
-            saveDataAll();
+            saveDataToGoogle();
             recalculateAndRender();
         }
     }
 
     function stepStudentLevel(branch, name, direction) {
-        if (!rawDataByBranch[branch][name]) return;
+        if (!rawDataByBranch[branch] || !rawDataByBranch[branch][name]) return;
         let currentLevel = rawDataByBranch[branch][name].levelRaw || "Lv1-A";
         let currentIndex = levelOptions.findIndex(opt => opt.toLowerCase() === currentLevel.toLowerCase());
         if (currentIndex === -1) currentIndex = 0;
@@ -728,168 +535,15 @@
         }
     }
 
-    function calcNextGrade(currentGrade, direction) {
-        let cleanStr = String(currentGrade || "").trim();
-        let idx = gradeOrder.indexOf(cleanStr);
-
-        if (idx === -1) {
-            if (cleanStr.includes("유치") || cleanStr.includes("7세") || cleanStr.includes("6세")) idx = 0;
-            else {
-                let m = cleanStr.match(/(초|중|고)?\s*([1-6])/);
-                if (m) {
-                    let type = m[1] || "초";
-                    let num = parseInt(m[2]);
-                    let targetStr = `${type}-${num}`;
-                    idx = gradeOrder.indexOf(targetStr);
-                }
-            }
-        }
-
-        if (idx !== -1) {
-            let nextIdx = idx + direction;
-            if (nextIdx >= 0 && nextIdx < gradeOrder.length) {
-                return gradeOrder[nextIdx];
-            }
-            return gradeOrder[idx];
-        }
-
-        return currentGrade;
-    }
-
-    function editStudentGrade(branch, name) {
-        const st = rawDataByBranch[branch][name];
-        if (!st) return;
-
-        const newGrade = prompt(`[${name}] 관원의 수정할 학년을 입력하세요 (예: 초-1, 초-2, 유치부, 중-1):`, st.grade);
-        if (newGrade !== null && newGrade.trim() !== "") {
-            const trimmed = newGrade.trim();
-            st.grade = trimmed;
-            st.isKinder = trimmed.includes('유치') || trimmed.includes('유아');
-            saveDataAll();
-            recalculateAndRender();
-        }
-    }
-
-    function toggleSelectAll(isChecked) {
-        const visibleStudents = getCurrentlyVisibleStudents();
-        visibleStudents.forEach(st => {
-            const key = st.branch + '_' + st.name;
-            if (isChecked) {
-                selectedStudents.add(key);
-            } else {
-                selectedStudents.delete(key);
-            }
-        });
-
-        renderCards(currentSelectedLevel);
-        updateSelectedCountUI();
-    }
-
     function toggleSelectStudent(branch, name, isChecked) {
         const key = branch + '_' + name;
         if (isChecked) selectedStudents.add(key);
         else selectedStudents.delete(key);
-        renderCards(currentSelectedLevel);
         updateSelectedCountUI();
     }
 
     function updateSelectedCountUI() {
         document.getElementById('selectedCount').innerText = selectedStudents.size;
-        
-        const visibleStudents = getCurrentlyVisibleStudents();
-        const chkAll = document.getElementById('chkSelectAll');
-        
-        if (visibleStudents.length > 0 && visibleStudents.every(st => selectedStudents.has(st.branch + '_' + st.name))) {
-            chkAll.checked = true;
-            chkAll.indeterminate = false;
-        } else if (visibleStudents.some(st => selectedStudents.has(st.branch + '_' + st.name))) {
-            chkAll.checked = false;
-            chkAll.indeterminate = true;
-        } else {
-            chkAll.checked = false;
-            chkAll.indeterminate = false;
-        }
-    }
-
-    /* ---------------- 일괄 관리 신규 추가/수정 함수 ---------------- */
-    
-    // 선택 관원 일괄 삭제
-    function batchDeleteStudents() {
-        if (selectedStudents.size === 0) return alert('삭제할 관원을 선택하세요.');
-        if (confirm(`⚠️ 정말로 선택한 ${selectedStudents.size}명의 관원을 영구 삭제하시겠습니까?`)) {
-            selectedStudents.forEach(key => {
-                const [b, name] = key.split('_');
-                if (rawDataByBranch[b] && rawDataByBranch[b][name]) {
-                    delete rawDataByBranch[b][name];
-                }
-            });
-            selectedStudents.clear();
-            saveDataAll();
-            recalculateAndRender();
-        }
-    }
-
-    // 선택 관원 일괄 휴원 / 일괄 재원 설정
-    function batchSetPauseStatus(isPaused) {
-        if (selectedStudents.size === 0) return alert('대상 관원을 선택하세요.');
-        const statusText = isPaused ? "휴원생" : "재원생";
-        if (confirm(`선택한 ${selectedStudents.size}명의 관원을 [${statusText}](으)로 전환하시겠습니까?`)) {
-            selectedStudents.forEach(key => {
-                const [b, name] = key.split('_');
-                if (rawDataByBranch[b] && rawDataByBranch[b][name]) {
-                    rawDataByBranch[b][name].isPaused = isPaused;
-                }
-            });
-            selectedStudents.clear();
-            saveDataAll();
-            recalculateAndRender();
-        }
-    }
-
-    function stepBatchGradeUpdate(direction) {
-        if (selectedStudents.size === 0) return alert('변경할 관원을 선택하세요.');
-        const actionText = direction > 0 ? "+1 학년 올리시겠습니까?" : "-1 학년 내리시겠습니까?";
-
-        if (confirm(`선택한 ${selectedStudents.size}명 관원의 학년을 ${actionText}`)) {
-            selectedStudents.forEach(key => {
-                const [b, name] = key.split('_');
-                if (rawDataByBranch[b] && rawDataByBranch[b][name]) {
-                    const st = rawDataByBranch[b][name];
-                    const newGrade = calcNextGrade(st.grade, direction);
-                    st.grade = newGrade;
-                    st.isKinder = newGrade.includes('유치') || newGrade.includes('유아');
-                }
-            });
-            saveDataAll();
-            recalculateAndRender();
-        }
-    }
-
-    function stepBatchLevelUpdate(direction) {
-        if (selectedStudents.size === 0) return alert('변경할 관원을 선택하세요.');
-        const currentMonth = document.getElementById('testMonth').value;
-        const actionText = direction > 0 ? "+1단계 올리시겠습니까?" : "-1단계 내리시겠습니까?";
-
-        if (confirm(`선택한 ${selectedStudents.size}명 관원의 레벨을 각자의 현재 레벨 기준 ${actionText}`)) {
-            selectedStudents.forEach(key => {
-                const [b, name] = key.split('_');
-                if (rawDataByBranch[b] && rawDataByBranch[b][name]) {
-                    let currentLevel = rawDataByBranch[b][name].levelRaw || "Lv1-A";
-                    let currentIndex = levelOptions.findIndex(opt => opt.toLowerCase() === currentLevel.toLowerCase());
-                    if (currentIndex === -1) currentIndex = 0;
-
-                    let newIndex = currentIndex + direction;
-                    if (newIndex >= 0 && newIndex < levelOptions.length) {
-                        rawDataByBranch[b][name].levelRaw = levelOptions[newIndex];
-                        rawDataByBranch[b][name].levelStartDate = currentMonth;
-                        rawDataByBranch[b][name].isPaused = false;
-                    }
-                }
-            });
-            selectedStudents.clear();
-            saveDataAll();
-            recalculateAndRender();
-        }
     }
 
     function applyBatchLevelUpdate() {
@@ -907,7 +561,7 @@
                 }
             });
             selectedStudents.clear();
-            saveDataAll();
+            saveDataToGoogle();
             recalculateAndRender();
         }
     }
@@ -920,6 +574,7 @@
         const currentMonth = document.getElementById('testMonth').value;
 
         if (!name) return alert('이름을 입력하세요.');
+        if (!rawDataByBranch[branch]) rawDataByBranch[branch] = {};
         if (rawDataByBranch[branch][name]) return alert(`'${name}' 관원은 ${branch}에 이미 등록되어 있습니다.`);
 
         rawDataByBranch[branch][name] = {
@@ -928,16 +583,16 @@
             levelRaw, levelStartDate: currentMonth, isPaused: false
         };
 
-        saveDataAll();
+        saveDataToGoogle();
         recalculateAndRender();
         document.getElementById('addName').value = '';
         document.getElementById('addGrade').value = '';
     }
 
     function togglePauseStudent(branch, name) {
-        if (rawDataByBranch[branch][name]) {
+        if (rawDataByBranch[branch] && rawDataByBranch[branch][name]) {
             rawDataByBranch[branch][name].isPaused = !rawDataByBranch[branch][name].isPaused;
-            saveDataAll();
+            saveDataToGoogle();
             recalculateAndRender();
         }
     }
@@ -945,7 +600,7 @@
     function deleteStudent(branch, name) {
         if (confirm(`[${branch}] ${name} 관원을 삭제하시겠습니까?`)) {
             delete rawDataByBranch[branch][name];
-            saveDataAll();
+            saveDataToGoogle();
             recalculateAndRender();
         }
     }
@@ -962,7 +617,7 @@
         rawDataByBranch[branch][trimmed] = st;
         delete rawDataByBranch[branch][oldName];
 
-        saveDataAll();
+        saveDataToGoogle();
         recalculateAndRender();
     }
 
@@ -993,6 +648,8 @@
             const currentMonth = document.getElementById('testMonth').value;
             let added = 0;
 
+            if (!rawDataByBranch[targetBranch]) rawDataByBranch[targetBranch] = {};
+
             for (let r = headerRow + 1; r < matrix.length; r++) {
                 const row = matrix[r];
                 const name = String(row[nameIdx] || "").trim();
@@ -1011,9 +668,9 @@
                 }
             }
 
-            saveDataAll();
+            saveDataToGoogle();
             recalculateAndRender();
-            alert(`[${targetBranch}] 엑셀 업로드 완료 (신규 ${added}명 추가 및 브라우저 자동 저장됨)`);
+            alert(`[${targetBranch}] 엑셀 업로드 완료 (신규 ${added}명 추가)`);
             document.getElementById('fileInput').value = '';
         };
         reader.readAsArrayBuffer(file);
@@ -1023,7 +680,7 @@
         const wb = XLSX.utils.book_new();
         ["1관", "2관"].forEach(b => {
             const data = [['[ 이름 ]', '[ 학년 ]', '[ 레벨 ]', '[ 시작월 ]', '[ 휴원여부 ]']];
-            Object.values(rawDataByBranch[b]).forEach(st => {
+            Object.values(rawDataByBranch[b] || {}).forEach(st => {
                 data.push([st.name, st.grade, st.levelRaw, st.levelStartDate, st.isPaused ? '휴원' : '재원']);
             });
             XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet(data), b);
